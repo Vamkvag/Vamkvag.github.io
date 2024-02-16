@@ -6,8 +6,49 @@
   <title>pagina teste</title>
 
   <link rel="stylesheet" href="style.css">
+
+  <style>
+
+    body{
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: not-allowed;
+  gap: 30px;
+}
+
+button{
+  padding: 30px;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  border: none;
+}
+
+#green{
+  background-color: green;
+}
+
+#red{
+  background-color: red;
+}
+
+#blue{
+  background-color: blue;
+}
+
+#white{
+  background-color: white;
+}
+  </style>
+
   
 </head>
+
 <body>
   
 <button id="green">Green</button>
@@ -16,6 +57,32 @@
 <button id="white">White</button>
 
 
-<script src="script.js"></script>
+<script>
+var green = document.querySelector('button#green')
+var red = document.querySelector('button#red')
+var blue = document.querySelector('button#blue')
+var white = document.querySelector('button#white')
+
+green.addEventListener('click', clicar_green)
+red.addEventListener('click', clicar_red)
+blue.addEventListener('click', clicar_blue)
+white.addEventListener('click', clicar_white)
+
+function clicar_green(){ 
+ document.body.style.background = 'green'
+}
+
+function clicar_red(){ 
+  document.body.style.background = 'red'
+ }
+
+ function clicar_blue(){ 
+  document.body.style.background = 'blue'
+ }
+
+ function clicar_white(){ 
+  document.body.style.background = 'white'
+ }
+</script>
 </body>
 </html>

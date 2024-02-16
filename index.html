@@ -18,12 +18,11 @@
   justify-content: center;
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
-  cursor: not-allowed;
-  gap: 30px;
+  gap: 50px;
 }
 
 button{
-  padding: 30px;
+  padding: 20px 50px;
   font-size: 1.5rem;
   border-radius: 20px;
   border: none;
@@ -33,16 +32,45 @@ button{
   background-color: green;
 }
 
+#green:hover{
+  background-color: rgb(0, 73, 0);
+  padding: 30px 60px;
+}
+
 #red{
   background-color: red;
+}
+
+#red:hover{
+  background-color: rgb(138, 0, 0);
+  padding: 30px 60px;
 }
 
 #blue{
   background-color: blue;
 }
 
+#blue:hover{
+  background-color: rgb(0, 0, 90);
+  padding: 30px 60px;
+}
+
 #white{
   background-color: white;
+}
+
+#white:hover{
+  background-color: rgb(174, 174, 174);
+  padding: 30px 60px;
+}
+
+@media (max-width: 720px){
+  body{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
 }
   </style>
 
