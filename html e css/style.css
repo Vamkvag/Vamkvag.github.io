@@ -1,0 +1,136 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: white;
+}
+
+body{
+  background: url("img/carro_para_pc.jpg") center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+img{
+  height: 20px;
+  margin: 20px;
+  margin: 0px;
+  padding: 0px;
+}
+
+a{
+  color: white;
+}
+.main_container{
+  display: grid;
+  place-items: center;
+  border-radius: 15px;
+  border: 1px solid black;
+  padding: 10px 20px 50px 20px;
+  box-shadow: 5px 5px 30px rgba(255, 255, 255, 0.138);
+  backdrop-filter: blur(10px);
+} 
+
+.main_login{
+  display: grid;
+  place-items: center;
+}
+
+.titulo{
+  font-weight: 300;
+  font-size: 3rem;
+}
+
+.titulo::after{
+    content: "";
+    width: 90px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    display: block;
+}
+
+
+.main_label{ 
+  display: block;
+  display: flex;
+  place-items: center;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 100px;
+  margin-top: 20px;
+}
+
+.main_input{
+  margin-left: 10px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.gmail{
+  margin-left: 18px;
+}
+
+.main_lembrar{
+  margin-bottom: 10px;
+  margin-top: 20px;
+  display: flex;
+  place-items: center;
+}
+
+.main_lembrar .lembrar{
+  font-size: 14px;
+  display: flex;
+  place-self: center;
+}
+
+.main_lembrar .lembrar input{
+  margin-right: 3px;
+}
+
+.main_lembrar .esqueceu_senha{
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+.main_lembrar .esqueceu_senha:hover{
+  text-decoration: underline;
+}
+
+.botao{
+  padding: 6px 124px;
+  border-radius: 20px;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.335);
+  color: black;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.botao:hover{
+  background-color: rgba(168, 168, 168, 0.419);
+}
+
+
+
+.criar_conta a:hover{
+  text-decoration: underline;
+}
+
+
+
+@media (max-width: 600px){
+
+  body{
+    background: url("img/carro_para_celular_reduzida.jpg") center no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+}
